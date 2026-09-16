@@ -1,0 +1,31 @@
+{
+  "version": "v1.0",
+  "listeners": [
+    {
+      "id": "$listener",
+      "doc": "A CloudVoiceListener for handling voice agent connections over WebSocket.",
+      "type": {
+        "name": "CloudVoiceListener"
+      },
+      "services": [
+        "voiceService"
+      ],
+      "multipleServicesAllowed": true,
+      "multipleServicesOfSameTypeAllowed": true
+    }
+  ],
+  "serviceTypes": [
+    {
+      "id": "voiceService",
+      "doc": "Represents a service that handles chat messages from a voice connection.",
+      "type": {
+        "name": "VoiceService"
+      },
+      "concrete": true,
+      "multipleListenersAllowed": false,
+      "handlers": {
+        "backedByConcreteType": true
+      }
+    }
+  ]
+}

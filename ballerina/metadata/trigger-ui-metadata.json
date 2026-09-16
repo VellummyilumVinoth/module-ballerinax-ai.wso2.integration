@@ -1,0 +1,101 @@
+{
+  "version": "v1.0",
+  "metadata": {
+    "kind": "event"
+  },
+  "trigger": {
+    "displayName": "Voice",
+    "description": "Create a service to handle chat messages from a voice connection",
+    "type": "voice"
+  },
+  "listeners": [
+    {
+      "target": "$listener",
+      "form": {
+        "section": {
+          "label": "Listener",
+          "description": "Attach the service to a new or existing cloud voice listener."
+        },
+        "createNew": {
+          "label": "Create New Listener",
+          "description": "Define a new cloud voice listener in the project."
+        },
+        "listenerConfig": {
+          "label": "Listener Configurations",
+          "description": "Configure the cloud voice listener."
+        },
+        "useExisting": {
+          "label": "Use Existing Listener",
+          "description": "Attach to a cloud voice listener already declared in the project."
+        },
+        "existingListener": {
+          "label": "Listener",
+          "description": "Select an existing cloud voice listener to attach the service to."
+        }
+      },
+      "formFields": {
+        "listenerVarName": {
+          "key": "listenerVarName",
+          "default": "voiceListener",
+          "metadata": {
+            "label": "Listener Name",
+            "description": "Provide a name for the listener being created"
+          },
+          "source": {
+            "construct": {
+              "kind": "LISTENER_VAR_NAME"
+            }
+          },
+          "state": {
+            "enabled": true,
+            "editable": true,
+            "optional": false,
+            "advanced": false
+          }
+        },
+        "listenOn": {
+          "key": "listenOn",
+          "placeholder": "8080",
+          "default": "8080",
+          "metadata": {
+            "label": "Port",
+            "description": "Port to listen on, or an existing websocket:Listener to share, for example with another WebSocket service"
+          },
+          "source": {
+            "argument": {
+              "kind": "LISTENER_PARAM_REQUIRED",
+              "position": 1,
+              "originalName": "listenOn"
+            }
+          },
+          "state": {
+            "enabled": true,
+            "editable": true,
+            "optional": false,
+            "advanced": false
+          }
+        }
+      }
+    }
+  ],
+  "serviceTypes": [
+    {
+      "target": "$service",
+      "metadata": {
+        "label": "Voice Service",
+        "description": "Represents a service that handles chat messages from a voice connection."
+      },
+      "state": {
+        "editable": false,
+        "enabled": true
+      }
+    }
+  ],
+  "artifactInfo": {
+    "displayLabel": "Voice Agent Integration",
+    "icon": {
+      "lightPath": "icons/light.svg",
+      "darkPath": "icons/dark.svg"
+    }
+  }
+}
