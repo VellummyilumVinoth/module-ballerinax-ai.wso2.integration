@@ -4,10 +4,10 @@ distribution = "2201.13.6"
 keywords = ["Vendor/WSO2", "Area/AI & Machine Learning", "Type/Connector", "Type/Knowledge Base", "Name/WSO2 Integration Platform"]
 license = ["Apache-2.0"]
 name = "ai.wso2.integration"
-org = "ballerinax"
+org = "vinoth"
 icon = "icon.png"
 repository = "https://github.com/ballerina-platform/module-ballerinax-ai.wso2.integration"
-version = "1.0.2"
+version = "1.0.3"
 include = ["metadata/**"]
 
 [platform.java21]
