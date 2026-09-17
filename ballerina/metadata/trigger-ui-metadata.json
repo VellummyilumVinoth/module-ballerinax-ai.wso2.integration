@@ -1,7 +1,7 @@
 {
   "version": "v1.0",
   "metadata": {
-    "kind": "event"
+    "kind": "ai"
   },
   "trigger": {
     "displayName": "Voice",
