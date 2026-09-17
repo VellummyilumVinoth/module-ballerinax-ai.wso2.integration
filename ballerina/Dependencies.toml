@@ -433,9 +433,9 @@ dependencies = [
 ]
 
 [[package]]
-org = "ballerinax"
+org = "vinoth"
 name = "ai.wso2.integration"
-version = "1.0.2"
+version = "1.0.3"
 dependencies = [
 	{org = "ballerina", name = "ai"},
 	{org = "ballerina", name = "data.jsondata"},
@@ -447,6 +447,6 @@ dependencies = [
 	{org = "ballerina", name = "websocket"}
 ]
 modules = [
-	{org = "ballerinax", packageName = "ai.wso2.integration", moduleName = "ai.wso2.integration"}
+	{org = "vinoth", packageName = "ai.wso2.integration", moduleName = "ai.wso2.integration"}
 ]
 

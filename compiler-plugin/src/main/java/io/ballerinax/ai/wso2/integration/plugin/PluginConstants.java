@@ -25,7 +25,7 @@ import io.ballerina.tools.diagnostics.DiagnosticSeverity;
  */
 public final class PluginConstants {
 
-    public static final String PACKAGE_ORG = "ballerinax";
+    public static final String PACKAGE_ORG = "vinoth";
     public static final String PACKAGE_NAME = "ai.wso2.integration";
     public static final String LISTENER_NAME = "CloudVoiceListener";
     public static final String CHAT_MESSAGE_TYPE = "ChatMessage";
