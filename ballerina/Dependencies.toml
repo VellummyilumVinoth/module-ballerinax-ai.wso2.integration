@@ -151,7 +151,7 @@ modules = [
 [[package]]
 org = "ballerina"
 name = "io"
-version = "1.8.1"
+version = "1.8.2"
 dependencies = [
 	{org = "ballerina", name = "jballerina.java"},
 	{org = "ballerina", name = "lang.value"}
@@ -433,9 +433,9 @@ dependencies = [
 ]
 
 [[package]]
-org = "vinoth"
+org = "ballerinax"
 name = "ai.wso2.integration"
-version = "1.0.3"
+version = "1.0.2"
 dependencies = [
 	{org = "ballerina", name = "ai"},
 	{org = "ballerina", name = "data.jsondata"},
@@ -447,6 +447,6 @@ dependencies = [
 	{org = "ballerina", name = "websocket"}
 ]
 modules = [
-	{org = "vinoth", packageName = "ai.wso2.integration", moduleName = "ai.wso2.integration"}
+	{org = "ballerinax", packageName = "ai.wso2.integration", moduleName = "ai.wso2.integration"}
 ]
 
