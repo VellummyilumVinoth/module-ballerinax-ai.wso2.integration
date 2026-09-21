@@ -44,6 +44,9 @@
           "source": {
             "construct": {
               "kind": "LISTENER_VAR_NAME"
+            },
+            "value": {
+              "preserve": true
             }
           },
           "state": {
@@ -67,6 +70,19 @@
               "position": 1,
               "originalName": "listenOn"
             }
+          },
+          "widget": {
+            "alternatives": [
+              {
+                "widgetKind": "NUMBER",
+                "ballerinaType": "int|websocket:Listener"
+              },
+              {
+                "widgetKind": "EXPRESSION",
+                "ballerinaType": "int|websocket:Listener"
+              }
+            ],
+            "selectedIndex": 0
           },
           "state": {
             "enabled": true,
