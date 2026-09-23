@@ -1,0 +1,43 @@
+asyncapi: 2.5.0
+info:
+  title: ${title}
+  version: 1.0.0
+servers:
+  development:
+    url: "{server}:{port}"
+    protocol: ws
+    protocolVersion: "13"
+    variables:
+      server:
+        default: ws://localhost
+      port:
+        default: "${port}"
+channels:
+  ${channel}:
+    publish:
+      message:
+        $ref: '#/components/messages/ChatMessage'
+    subscribe:
+      message:
+        payload:
+          type: string
+components:
+  messages:
+    ChatMessage:
+      payload:
+        $ref: '#/components/schemas/ChatMessage'
+  schemas:
+    ChatMessage:
+      type: object
+      required:
+        - sessionId
+        - message
+      properties:
+        sessionId:
+          type: string
+          description: >-
+            Identifies the user's session. Stable across the turns of one
+            connection, so it can be used directly as an agent memory key.
+        message:
+          type: string
+          description: The latest user utterance.

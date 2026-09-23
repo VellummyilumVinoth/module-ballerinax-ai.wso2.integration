@@ -33,9 +33,11 @@ plugins {
 rootProject.name = 'module-ballerinax-ai.wso2.integration'
 
 include ':checkstyle'
+include ':ai.wso2.integration-compiler-plugin'
 include ':ai.wso2.integration-ballerina'
 
 project(':checkstyle').projectDir = file("build-config${File.separator}checkstyle")
+project(':ai.wso2.integration-compiler-plugin').projectDir = file("compiler-plugin")
 project(':ai.wso2.integration-ballerina').projectDir = file("ballerina")
 
 gradleEnterprise {
