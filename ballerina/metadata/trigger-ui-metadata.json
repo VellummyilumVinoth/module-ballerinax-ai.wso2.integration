@@ -107,7 +107,7 @@
       }
     }
   ],
-  "importPrefix": "voice",
+  "importPrefix": "integration",
   "artifactInfo": {
     "displayLabel": "Voice Agent Integration",
     "icon": {

@@ -3,4 +3,4 @@ id = "ai-wso2-integration-compiler-plugin"
 class = "io.ballerinax.ai.wso2.integration.plugin.AiWso2IntegrationCompilerPlugin"
 
 [[dependency]]
-path = "../compiler-plugin/build/libs/ai.wso2.integration-compiler-plugin-1.1.0-SNAPSHOT.jar"
+path = "../compiler-plugin/build/libs/ai.wso2.integration-compiler-plugin-1.1.1-SNAPSHOT.jar"
